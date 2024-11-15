@@ -1,5 +1,5 @@
 # Etapa 1: Compilación de la aplicación
-FROM maven:3.9.4-eclipse-temurin-17 AS build
+FROM maven:3.9.9-openjdk-21 AS build
 
 WORKDIR /app
 
