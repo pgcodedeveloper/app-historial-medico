@@ -7,7 +7,8 @@ WORKDIR /app
 COPY . /app
 
 # Ejecuta el empaquetado de Maven para construir el JAR
-RUN mvn clean package
+RUN mvn clean package -e -X
+
 
 # Crear una nueva imagen basada en OpenJDK 21
 FROM openjdk:21
