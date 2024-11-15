@@ -9,7 +9,7 @@ COPY pom.xml .
 COPY src/ ./src/
 
 # Ejecuta el empaquetado de Maven para construir el JAR
-RUN mvn clean package -DskipTests
+RUN mvn clean package
 
 # Etapa 2: Construcción de la imagen de ejecución
 FROM openjdk:17-jdk-slim
